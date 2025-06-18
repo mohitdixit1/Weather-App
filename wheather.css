@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+
+
+}
+.full{
+    height: 100vh;
+    width: 100%;
+    background-color: #E6D7D5;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    
+}
+.add{
+    height: 31.25rem;
+    width: 21.875rem;
+    background-color: #E6D7D5;
+    margin: 1.875rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    box-shadow: 1px 1px 2.25rem chocolate;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+    
+
+
+}
+#first-card{
+    background-image: url("loginbg.webp");
+    background-position: center;
+    background-size: cover;
+   
+}
+#second-card{
+    display: none;
+}
+#first-card:hover{
+    animation: colorchanging infinite 4s 0s;
+}
+#second-card:hover{
+    animation: colorchanging infinite 4s 0s;
+}
+.wheather-icon{
+    height: 6.25rem;
+    width: 6.25rem;
+}
+.icon , i {
+    font-size: 6.875rem;
+    filter: drop-shadow(0 0 3.75rem black);
+} 
+.wheather-condition{
+    font-size: 1.875rem;
+}
+.text{
+    text-align: center;
+    color: black;
+    padding-bottom: 1.25rem;
+}
+p{
+    filter: drop-shadow(0 0 3.75rem white);
+    letter-spacing: 0.1em;
+    color: black;
+}
+.wheather{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+    height: 40vh;
+}
+.city{
+    font-size: 3.125rem;
+    padding-left: 30px;
+}
+h1{
+    font-size: 3.75rem;
+}
+.search-div{
+    height: 50px;
+    width: 400px;
+    left: 35.938rem;
+    display: none;
+    
+    
+}
+.temp{
+      font-size: 4.375rem;
+}
+.search{
+    height: 3.125rem;
+    width: 21.875rem;
+    border: none;
+    border-radius: 2.5rem;
+    position: absolute;
+    box-shadow: 2px 2px 1.25rem chocolate;
+    background-color: #CBBDC2;
+    color: #60605c;
+    font-size: 1.25rem;
+    padding-left: 1.5rem;
+    
+}
+.search:hover{
+    animation: colorchanging infinite 4s 0s;
+}
+@keyframes colorchanging {
+    0%{
+        box-shadow: 2px 2px 1.25rem chocolate; 
+    }
+    25%{
+        box-shadow: 2px 2px 1.25rem cadetblue;
+    }
+    50%{
+        box-shadow: 2px 2px 1.25rem grey;
+
+    }
+    100%{
+        box-shadow: 2px 2px 1.25rem chocolate;
+    }
+    
+}
+.search:focus{
+    outline: none;
+}
+.search::placeholder{
+    text-align: center;
+    color: #60605c;
+    font-size: 1.25rem;
+    
+}
+.search-btn{
+    height: 3.125rem;
+    width: 3.125rem;
+    border: none;
+    border-radius: 2.5rem;
+    font-size: 1.25rem;
+    position: relative;
+    left: 20.625rem;
+    cursor: pointer;
+    background-color: transparent;
+    backdrop-filter: blur(1.875rem);
+
+}
+.search-btn:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.date-time{
+    font-size: 20px;
+}
+.search-show{
+    height: 3rem;
+    width: 3rem;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50px;
+    backdrop-filter: blur(100px);
+    left: 8px;
+    top: 6px;
+    rotate: -90deg;
+    
+}
+.search-show:hover{
+    
+    box-shadow: 1px 1px 60px white;
+    animation: rotate 2s ease-in-out 0.02s ;
+}
+
+@keyframes rotate {
+    0%{
+        
+    rotate: -90deg;
+    }
+    100%{
+        rotate: 270deg;
+    }
+    
+    
+}
+
