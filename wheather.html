@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App</title>
   <link rel="stylesheet" href="wheather.css" />
 </head>
+
 <body>
   <div class="container">
     <header>
-  <h1>Weather Now</h1>
-  <button class="search-toggle" title="Search city">🔍</button>
-</header>
+      <h1>Weather Now</h1>
+      <button class="search-toggle" title="Search city">🔍</button>
+    </header>
 
     <div class="search-container">
       <input type="text" id="city-input" placeholder="Enter city name" />
       <button id="search-btn">Search</button>
     </div>
+
     <div id="weather-card" class="weather-card">
       <div class="weather-header">
         <h2 id="city-name">New York</h2>
         <p id="date-time">Monday, June 18 | 10:52 AM</p>
       </div>
       <div class="weather-body">
-        <div id="weather-icon" class="icon">☀️</div>
-        <p id="temperature">25°C</p>
-        <p id="condition">Sunny</p>
+        <div class="weather-block" id="block-icon">
+          <div id="weather-icon" class="icon">☀️</div>
+          <p id="temperature">25°C</p>
+          <p id="condition">Sunny</p>
+        </div>
+
+        <div class="weather-block" id="block-feels">
+          <p id="feels-like" data-icon="🌡️">Feels Like: 27°C</p>
+        </div>
+
+        <div class="weather-block" id="block-humidity">
+          <p id="humidity" data-icon="💧">Humidity: 70%</p>
+        </div>
+
+        <div class="weather-block" id="block-wind">
+          <p id="wind" data-icon="💨">Wind: 10 km/h ESE</p>
+        </div>
+
+        <div class="weather-block" id="block-pressure">
+          <p id="pressure" data-icon="📈">Pressure: 1005 hPa</p>
+        </div>
+
+        <div class="weather-block" id="block-clouds">
+          <p id="clouds" data-icon="☁️">Cloudiness: 40%</p>
+        </div>
+
+        <div class="weather-block" id="block-sunrise">
+          <p id="sunrise" data-icon="🌅">Sunrise: 05:41 AM</p>
+        </div>
+
+        <div class="weather-block" id="block-sunset">
+          <p id="sunset" data-icon="🌇">Sunset: 06:59 PM</p>
+        </div>
       </div>
+
     </div>
   </div>
+
   <script src="wheather.js" defer></script>
 </body>
+
 </html>

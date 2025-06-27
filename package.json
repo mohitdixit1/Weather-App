@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wheather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitdixit1/Weather-App.git"
+  },
+  "author": "mohit dixit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohitdixit1/Weather-App/issues"
+  },
+  "homepage": "https://github.com/mohitdixit1/Weather-App#readme"
+}
