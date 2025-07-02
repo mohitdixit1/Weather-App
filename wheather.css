@@ -178,9 +178,35 @@ header h1 {
   color: #ccc;
   margin-top: 5px;
 }
-
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+    max-width: 90%;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .search-container input {
+    width: 58%;
+    font-size: 0.9rem;
+  }
+
+  .search-container button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  #temperature {
+    font-size: 2rem;
+  }
+
+  #weather-icon {
+    font-size: 3.2rem;
+  }
+
   .weather-body {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -189,30 +215,82 @@ header h1 {
     grid-column: span 2;
   }
 
+  #block-sunset {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
   .container {
-    padding: 20px 15px;
+    padding: 15px 10px;
   }
 
   header h1 {
-    font-size: 1.4rem;
-  }
-
-  #temperature {
-    font-size: 2.3rem;
-  }
-
-  #weather-icon {
-    font-size: 3.2rem;
+    font-size: 1.2rem;
   }
 
   .search-container input {
-    width: 60%;
-    font-size: 0.9rem;
+    width: 55%;
+    padding: 10px;
+    font-size: 0.85rem;
   }
 
   .search-container button {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .weather-body {
+    grid-template-columns: 1fr;
+  }
+
+  #block-icon, #block-sunset {
+    grid-column: span 1;
+  }
+
+  .weather-block p {
+    font-size: 0.85rem;
+  }
+
+  #temperature {
+    font-size: 1.8rem;
+  }
+
+  #weather-icon {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 350px) {
+  header h1 {
+    font-size: 1rem;
+  }
+
+  .search-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container button {
+    width: 100%;
+  }
+
+  .project-content p,
+  .weather-block p {
+    font-size: 0.8rem;
+  }
+
+  #temperature {
+    font-size: 1.6rem;
+  }
+
+  #weather-icon {
+    font-size: 2.5rem;
   }
 }
 
